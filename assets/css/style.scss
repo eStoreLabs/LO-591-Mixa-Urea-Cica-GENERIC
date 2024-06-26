@@ -285,7 +285,7 @@
       width: 100%;
       text-align: center;
       font-size: 20px;
-      font-weight: 300;
+      font-weight: 400;
       color: #000;
     }
     &__container {
@@ -321,7 +321,7 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 20px;
-      font-weight: 300;
+      font-weight: 400;
       color: #000;
     }
   }
@@ -331,7 +331,7 @@
     background: -webkit-linear-gradient(left, #d5e3ed, #b5cbe2);
     background: linear-gradient(90deg, #d5e3ed, #e8b1b9);
     padding-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
     position: relative;
 
     &__title {
@@ -344,8 +344,8 @@
       width: 100%;
       text-transform: uppercase;
       text-align: center;
-      font-size: 30px;
-      font-weight: 600;
+      font-size: 25px;
+      font-weight: 700;
       color: #c40435;
     }
     &__image {
@@ -384,6 +384,7 @@
       text-transform: uppercase;
       border-radius: 15px 0 15px 0;
       background-color: #c40435;
+      z-index: 2;
     }
     &__subtitle--left {
       margin-left: 3%;
@@ -412,7 +413,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 72%;
+      height: 118%;
       opacity: 0.5;
       z-index: -1;
       background-color: #fff;
@@ -420,6 +421,9 @@
     &__item {
       text-align: center;
       max-width: 185px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     &__number {
       opacity: 1;
@@ -450,6 +454,10 @@
       color: #810323;
       padding-bottom: 10px;
     }
+
+    &__text--red {
+      color: #810323;
+    }
   }
 
   .es-ingr {
@@ -461,7 +469,7 @@
       display: none;
     }
     &__headline {
-      padding: 60px 0 50px;
+      padding: 40px 0 40px;
       width: 100%;
       background-color: #c40435;
     }
@@ -496,12 +504,13 @@
     }
     &__container {
       position: relative;
-      padding-top: 60px;
+      min-height: 400px;
     }
     &__image {
-      max-width: 100%;
+      max-width: 80%;
       display: block;
       margin: 0 auto;
+      margin-right: 0;
     }
     &__item {
       text-align: center;
@@ -518,7 +527,7 @@
       width: 100%;
       text-transform: uppercase;
       text-align: center;
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 600;
       color: #c40435;
     }
@@ -533,8 +542,8 @@
       font-family: inherit;
       font-weight: inherit;
       text-align: center;
-      font-size: 14px;
-      font-weight: 300;
+      font-size: 13px;
+      font-weight: 500;
       color: #000;
       white-space: nowrap;
     }
@@ -594,7 +603,7 @@
     &__th {
       margin: 0 auto;
       text-align: center;
-      padding: 0.75rem 1.5rem;
+      padding: 0.75rem 0.8rem;
       vertical-align: bottom;
     }
     &__td {
@@ -602,9 +611,10 @@
       text-align: center;
       padding: 15px;
       vertical-align: middle;
-      font-size: 18px;
+      font-size: 16px;
       color: #000;
       background: #fff;
+      font-weight: 400;
     }
     &__td:first-child {
       text-align: left;
@@ -645,9 +655,9 @@
 
   .es-cross {
     margin: 0;
-    padding-top: 50px;
-    background: -webkit-linear-gradient(top, #f5f5f5, #f5f5f5 250px, #fff 250px, #fff);
-    background: linear-gradient(180deg, #f5f5f5, #f5f5f5 250px, #fff 250px, #fff);
+    padding-top: 30px;
+    background: -webkit-linear-gradient(top, #f5f5f5, #f5f5f5 200px, #fff 200px, #fff);
+    background: linear-gradient(180deg, #f5f5f5, #f5f5f5 200px, #fff 200px, #fff);
 
     &__title {
       margin: 0;
@@ -716,8 +726,8 @@
     &__link {
       margin: 20px auto 30px;
       color: #fff;
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 600;
       padding: 8px 35px;
       text-decoration: none;
       border-radius: 10px;
@@ -742,7 +752,7 @@
       padding: 40px 10px 20px;
       text-align: center;
       font-size: 10px;
-      font-weight: 300;
+      font-weight: 500;
       color: #000;
     }
   }
@@ -756,7 +766,7 @@
         font-size: 16px;
       }
       &__item {
-        max-width: 220px;
+        max-width: 260px;
       }
       &__number {
         font-size: 70px;
@@ -764,9 +774,12 @@
       &__text {
         font-size: 14px;
       }
-      &__text--blue {
+      &__text--red {
         font-size: 18px;
         padding-bottom: 10px;
+      }
+      &__text--big {
+        font-size: 16px;
       }
     }
   }
@@ -789,7 +802,7 @@
         width: 50%;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 10px;
         text-align: right;
       }
       &__title {
@@ -823,6 +836,9 @@
       }
       &__logo {
         margin: 0 0 0 auto;
+        width: 160px;
+        margin-top: 30px;
+        margin-bottom: 40px;
       }
     }
 
@@ -890,13 +906,23 @@
         text-align: left;
         position: absolute;
       }
-      &__item--1 {
+      &__image {
+        position: absolute;
         top: 0;
+        right: 0;
+        max-width: 46%;
+      }
+      &__line {
+        max-width: none;
+        width: 140%;
+      }
+      &__item--1 {
+        top: 4%;
         left: 2%;
       }
       &__item--2 {
-        top: 0;
-        right: -2%;
+        top: 44%;
+        left: 2%;
       }
       &__item--3 {
         top: 250px;
@@ -904,6 +930,7 @@
       }
       &__line {
         position: relative;
+        padding-left: 20px;
       }
       &__line--3 {
         left: -20px;
@@ -919,7 +946,40 @@
 
     .es-routine {
       padding: 0 25px;
+      &__td {
+        width: 200px;
+
+        &--firstColumn {
+          width: 150px;
+        }
+      }
+
+      &__td--name {
+        text-transform: uppercase;
+      }
+
+      &__pack-img {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+      }
     }
+
+    .es-cross {
+      &__image {
+        max-width: 70%;
+        margin-bottom: 20px;
+      }
+      &__desc {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      &__text {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
     .es-percents__image {
       max-width: 378px;
     }
