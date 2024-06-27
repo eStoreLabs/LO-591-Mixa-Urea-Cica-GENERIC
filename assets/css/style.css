@@ -724,6 +724,17 @@
   #es-mixa.es-mixa .es-icons__bubble {
     display: block;
   }
+  #es-mixa.es-mixa .es-icons__container {
+    gap: 30px 50px;
+  }
+  #es-mixa.es-mixa .es-icons__item {
+    width: 150px;
+    min-width: 150px;
+    margin: 0;
+  }
+  #es-mixa.es-mixa .es-icons__icon {
+    width: 75%;
+  }
   #es-mixa.es-mixa .es-percents__image {
     max-width: 300px;
     position: absolute;

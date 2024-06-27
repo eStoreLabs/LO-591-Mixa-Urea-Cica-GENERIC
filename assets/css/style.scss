@@ -848,6 +848,17 @@
       &__bubble {
         display: block;
       }
+      &__container {
+        gap: 30px 50px;
+      }
+      &__item {
+        width: 150px;
+        min-width: 150px;
+        margin: 0;
+      }
+      &__icon {
+        width: 75%;
+      }
     }
 
     .es-percents {
