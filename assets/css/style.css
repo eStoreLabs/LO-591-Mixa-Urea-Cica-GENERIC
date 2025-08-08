@@ -81,9 +81,10 @@
   margin: 0 auto;
 }
 #es-mixa.es-mixa .es-kv__logo {
-  max-width: 100%;
+  width: 100%;
+  max-width: 200px;
   display: block;
-  margin: 0 auto;
+  margin: 32px auto;
 }
 #es-mixa.es-mixa .es-kv__title {
   margin: 0;

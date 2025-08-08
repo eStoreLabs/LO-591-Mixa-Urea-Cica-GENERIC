@@ -81,12 +81,12 @@
 #es-mixa.es-mixa h3,
 #es-mixa.es-mixa h4,
 #es-mixa.es-mixa h5 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #c40435;
 }
 
 #es-mixa.es-mixa {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 300;
   line-height: 1.2;
@@ -125,11 +125,10 @@
       margin: 0 auto;
     }
     &__logo {
-      & {
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-      }
+      width: 100%;
+      max-width: 200px;
+      display: block;
+      margin: 32px auto;
     }
     &__title {
       margin: 0;
@@ -329,7 +328,13 @@
   }
 
   .es-percents {
-    background: -webkit-gradient(linear, left top, right top, from(#d5e3ed), to(#b5cbe2));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#d5e3ed),
+      to(#b5cbe2)
+    );
     background: -webkit-linear-gradient(left, #d5e3ed, #b5cbe2);
     background: linear-gradient(90deg, #d5e3ed, #e8b1b9);
     padding-top: 30px;
@@ -410,7 +415,7 @@
       justify-content: space-between;
     }
     &__row:before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -550,7 +555,7 @@
       white-space: nowrap;
     }
     &__listItem:before {
-      content: '•';
+      content: "•";
       color: #c40435;
       font-size: 20px;
       font-weight: 900;
@@ -568,8 +573,20 @@
     & {
       margin-top: 50px;
       padding: 0 5px;
-      background: -webkit-linear-gradient(top, #fff, #fff 400px, #f5f5f5 400px, #f5f5f5);
-      background: linear-gradient(180deg, #fff, #fff 400px, #f5f5f5 400px, #f5f5f5);
+      background: -webkit-linear-gradient(
+        top,
+        #fff,
+        #fff 400px,
+        #f5f5f5 400px,
+        #f5f5f5
+      );
+      background: linear-gradient(
+        180deg,
+        #fff,
+        #fff 400px,
+        #f5f5f5 400px,
+        #f5f5f5
+      );
     }
     &__title {
       margin: 0;
@@ -658,8 +675,20 @@
   .es-cross {
     margin: 0;
     padding-top: 30px;
-    background: -webkit-linear-gradient(top, #f5f5f5, #f5f5f5 200px, #fff 200px, #fff);
-    background: linear-gradient(180deg, #f5f5f5, #f5f5f5 200px, #fff 200px, #fff);
+    background: -webkit-linear-gradient(
+      top,
+      #f5f5f5,
+      #f5f5f5 200px,
+      #fff 200px,
+      #fff
+    );
+    background: linear-gradient(
+      180deg,
+      #f5f5f5,
+      #f5f5f5 200px,
+      #fff 200px,
+      #fff
+    );
 
     &__title {
       margin: 0;
